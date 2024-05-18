@@ -2,6 +2,13 @@ name: CI
 
 on:
   workflow_dispatch:
+    inputs:
+      w:
+        description: w
+        type: choice
+        options:
+        - w
+        - w2
 
   push:
     branches: [ master ]
